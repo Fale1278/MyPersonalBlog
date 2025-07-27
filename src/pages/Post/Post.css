@@ -1,0 +1,52 @@
+.post-container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.post-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #4c2882;
+}
+
+.post-image-wrapper {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.post-image {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.post-meta {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.post-date {
+  font-style: italic;
+  margin-top: 0.2rem;
+}
+
+.post-content {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.loading,
+.error {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 1.2rem;
+  color: #999;
+}

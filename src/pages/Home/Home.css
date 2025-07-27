@@ -1,0 +1,246 @@
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #f3e8ff, #cccfd4);
+}
+
+/* General Section Styling */
+section {
+  margin-bottom: 3rem;
+  border-radius: 12px;
+  padding: 2rem 1rem;
+  box-shadow: 0 4px 12px rgba(128, 0, 128, 0.1);
+  background: #fff;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #9f7aea, #805ad5);
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* About & Contact */
+.about,
+.contact {
+  text-align: center;
+}
+
+.about h2{
+  color: #6b46c1;
+}
+
+.about p,
+.contact p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #000000;
+  font-size: 1.1rem;
+}
+
+.testimonials {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(to right, #f7f0ff, #fef9ff);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(128, 0, 128, 0.05);
+}
+
+.testimonials h2 {
+  font-size: 1.5rem;
+  color: #6b46c1;
+  margin-bottom: 1rem;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.testimonial {
+  background: #ffffff;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  text-align: left;
+  box-shadow: 0 6px 18px rgba(159, 122, 234, 0.1);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial::before {
+  content: "“";
+  font-size: 3rem;
+  color: #9f7aea;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+}
+
+.testimonial p {
+  font-style: italic;
+  color: #333;
+  line-height: 1.6;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #6b46c1;
+}
+
+.testimonial-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.8rem;
+  border: 3px solid #9f7aea;
+}
+
+
+/* Blog Posts Section */
+.posts {
+  text-align: center;
+}
+
+.posts .post-list {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+
+.posts h2 {
+  color: #000000;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 600px;
+  margin: 2rem auto 0;
+  padding: 2rem;
+  background: linear-gradient(145deg, #f6edff, #f8f2ff);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(128, 0, 128, 0.1);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #5b2c91;
+  margin-bottom: 6px;
+  font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border: 1px solid #d0b3f1;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #9f7aea;
+  box-shadow: 0 0 0 3px rgba(159, 122, 234, 0.2);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+  padding: 14px 24px;
+  background: linear-gradient(90deg, #9f7aea, #805ad5);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.contact-form button:hover {
+  background: linear-gradient(90deg, #805ad5, #6b46c1);
+  transform: translateY(-2px);
+}
+
+.contact-form {
+  animation: fadeSlideUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeSlideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+
+
+/* Media Queries for Responsiveness */
+@media screen and (min-width: 768px) {
+  
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+  .testimonial-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;    
+  }
+
+  .testimonial {
+    margin: 0 0.8rem;
+    flex: 1 0 280px;
+  }
+
+  .testimonials h2 {
+    font-size: 2.5rem;
+  }
+}
